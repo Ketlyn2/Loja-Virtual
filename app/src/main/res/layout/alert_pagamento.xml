@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_button"
+    android:backgroundTint="@color/white">
+
+    <EditText
+        android:id="@+id/fm_pagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_edt_text"
+        android:hint="Dinheiro"
+        android:textColorHint="@color/purple"
+        android:inputType="text"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/bt_pagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/fm_pagamento"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirmar Valor"
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/purple"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"/>
+
+</RelativeLayout>

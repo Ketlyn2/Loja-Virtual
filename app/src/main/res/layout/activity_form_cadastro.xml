@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_degrade"
+        tools:context=".Form.FormCadastro"
+        android:id="@+id/relativeCadastro">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="493dp"
+            android:layout_centerInParent="true"
+            android:alpha="0.3"
+            android:elevation="-200dp"
+            android:src="@drawable/ic_drawer" />
+
+        <ImageView
+            android:id="@+id/btVoltar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_chevron" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/bemvindo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="Bem vindo!"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bemvindo"
+                android:fontFamily="sans-serif-black"
+                android:text="Cadastre-se"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtEmail"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cadastrar"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:textColorHint="@color/white"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="@color/white"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edtSenha"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtEmail"
+                android:layout_marginTop="10dp"
+                android:hint="Senha"
+                android:textColorHint="@color/white"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="@color/white"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtSenha"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_button_alpha"
+                android:elevation="10dp"
+                android:padding="15dp"
+                android:text="Cadastrar"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

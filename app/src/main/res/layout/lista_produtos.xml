@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_button"
+    android:padding="15dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/white">
+
+    <ImageView
+        android:id="@+id/foto_produto"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@color/black" />
+
+    <TextView
+        android:id="@+id/nome_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/foto_produto"
+        android:maxLength="50"
+        android:text="Tenis da Nike"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/preco_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nome_produto"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/foto_produto"
+        android:fontFamily="sans-serif-black"
+        android:text="R$ 249,00"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>
